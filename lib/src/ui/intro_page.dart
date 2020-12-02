@@ -18,6 +18,7 @@ class IntroPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Expanded(),
             if (page.image != null)
               Container(
                 child: Padding(
@@ -26,14 +27,12 @@ class IntroPage extends StatelessWidget {
                 ),
               ),
             Container(
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 70.0),
-                child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
-                  child: IntroContent(page: page),
-                ),
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: IntroContent(page: page),
               ),
             ),
+            Expanded(),
           ],
         ),
       ),
