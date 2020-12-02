@@ -18,7 +18,6 @@ class IntroPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(),
             if (page.image != null)
               Container(
                 child: Padding(
@@ -29,7 +28,6 @@ class IntroPage extends StatelessWidget {
             Container(
               child: IntroContent(page: page),
             ),
-            Expanded(),
           ],
         ),
       ),
