@@ -17,10 +17,6 @@ class IntroPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Expanded(
-              flex: 3,
-              child: Container(),
-            ),
             if (page.image != null)
               Expanded(
                 flex: page.decoration.imageFlex,
@@ -38,10 +34,6 @@ class IntroPage extends StatelessWidget {
                   child: IntroContent(page: page),
                 ),
               ),
-            ),
-            Expanded(
-              flex: 3,
-              child: Container(),
             ),
           ],
         ),
