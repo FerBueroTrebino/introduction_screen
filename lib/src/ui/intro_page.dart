@@ -27,10 +27,7 @@ class IntroPage extends StatelessWidget {
                 ),
               ),
             Container(
-              child: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(),
-                child: IntroContent(page: page),
-              ),
+              child: IntroContent(page: page),
             ),
             Expanded(),
           ],
