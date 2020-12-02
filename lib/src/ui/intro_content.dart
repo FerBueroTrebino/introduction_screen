@@ -15,6 +15,7 @@ class IntroContent extends StatelessWidget {
     return Padding(
       padding: page.decoration.contentPadding,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
             padding: page.decoration.titlePadding,
